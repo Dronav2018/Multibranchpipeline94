@@ -1,0 +1,47 @@
+pipeline {
+  agent any
+  stages {
+    stage('Plan') {
+      steps {
+        echo 'Plan the actiiti'
+      }
+    }
+
+    stage('code') {
+      steps {
+        echo 'Developer start the Development'
+      }
+    }
+
+    stage('Build') {
+      steps {
+        echo 'Buld the code'
+      }
+    }
+
+    stage('Test') {
+      steps {
+        echo 'Test the code by using unit test cases'
+      }
+    }
+
+    stage('Deploy ') {
+      steps {
+        echo 'Run the code'
+      }
+    }
+
+    stage('Release') {
+      steps {
+        echo 'Move the code'
+      }
+    }
+
+    stage('Operate') {
+      steps {
+        echo 'We can operate the app'
+      }
+    }
+
+  }
+}
